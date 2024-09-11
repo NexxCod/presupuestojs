@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Presupuesto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Presupuesto Personal</h1>
+        
+        <div id="input-section">
+            <input type="text" id="description" placeholder="Descripción">
+            <input type="number" id="amount" placeholder="Monto">
+            <button id="add-btn">Agregar</button>
+        </div>
+
+        <h2>Presupuesto Total: <span id="total-budget">$0</span></h2>
+    <hr>
+        <div id="transactions-section">
+            <h3>Transacciones</h3>
+            <ul id="transactions-list"></ul>
+        </div>
+
+        <!-- filtro para transacciones mayores a un valor -->
+        <div id="filter-section">
+            <h3>Filtrar Transacciones</h3>
+            <input type="number" id="filter-amount" placeholder="Monto mínimo">
+            <button id="filter-btn">Filtrar por monto</button>
+            <ul id="filtered-transactions-list"></ul>
+        </div>
+
+        <!-- chequeo para verificar una transacción específica -->
+        <div id="check-section">
+            <h3>Verificar Transacción</h3>
+            <input type="number" id="check-amount" placeholder="Monto exacto">
+            <button id="check-btn">Verificar monto</button>
+            <p id="check-result"></p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
